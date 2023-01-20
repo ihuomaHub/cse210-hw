@@ -15,23 +15,31 @@ class Program
         
         if (x >= y)
         {
-            Console.Write("Your grade is A");
+            Console.WriteLine("Your grade is A");
         }
         else if (x >= z && x < y)
         {
-            Console.Write("Your grade is B");
+            Console.WriteLine("Your grade is B");
         } 
         else if (x >= m && x < z)
         {
-            Console.Write("Your grade is C");
+            Console.WriteLine("Your grade is C");
         }
         else if (x >= n && x < m)
         {
-            Console.Write("Your grade is D");
+            Console.WriteLine("Your grade is D");
         }
         else
         {
-            Console.Write("Your grade is F");
+            Console.WriteLine("Your grade is F");
+        }
+        if (x >= m)
+        {
+            Console.WriteLine("You passed the course! Congratulations! Keep it up");
+        }
+        else
+        {
+            Console.WriteLine("You didn't pass the course. Please put more effort, you can make it!");
         }
     }
 }
