@@ -6,34 +6,37 @@ class Program
     {
         Console.Write("Enter your grade percentage ");
         string userInput = Console.ReadLine();
+        string letter = "";
 
         int x = int.Parse(userInput);
-        int y = 90;
-        int z = 80;
-        int m = 70;
-        int n = 60;
+       
         
-        if (x >= y)
+        
+        if (x >= 90)
         {
-            Console.WriteLine("Your grade is A");
+            letter = "A";
         }
-        else if (x >= z && x < y)
+        else if (x >= 80)
         {
-            Console.WriteLine("Your grade is B");
+            letter = "B";
         } 
-        else if (x >= m && x < z)
+        else if (x >= 70)
         {
-            Console.WriteLine("Your grade is C");
+            letter = "C";
         }
-        else if (x >= n && x < m)
+        else if (x >= 60)
         {
-            Console.WriteLine("Your grade is D");
+            letter = "D";
         }
         else
         {
-            Console.WriteLine("Your grade is F");
+            letter = "F";
         }
-        if (x >= m)
+
+        Console.WriteLine($"Your grade is {letter}");
+
+
+        if (x >= 70)
         {
             Console.WriteLine("You passed the course! Congratulations! Keep it up");
         }
