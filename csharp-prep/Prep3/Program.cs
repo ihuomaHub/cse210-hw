@@ -16,7 +16,14 @@ class Program
         {
             Console.WriteLine("higher");
         }
-
+        else if (margicNumber < guessNumber)
+        {
+            Console.WriteLine("lower");
+        }
+        else
+        {
+            Console.WriteLine("You guess it!");
+        }
     }
     
 }
